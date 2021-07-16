@@ -13,10 +13,11 @@
   time.timeZone = "Asia/Seoul";
 
   nix = {
-    package = pkgs.nixUnstable;
+    package = pkgs.nixFlakes;
     extraOptions = ''
       experimental-features = nix-command flakes
     '';
+    trustedUsers = [ "jj" "root" "@admin" "@wheel" ];
   };
 
   networking = {
