@@ -43,7 +43,8 @@
     uid = 1000;
     home = "/home/jj";
     extraGroups = [ "wheel" "networkmanager" ];
-    hashedPassword = "nix-shell -p mkpasswd --run 'mkpasswd -m sha-512'";
+    # to generate : nix-shell -p mkpasswd --run 'mkpasswd -m sha-512'
+    hashedPassword = "$6$yQZhmtQSc$yrSsqB5WQQsbvd2Gxz/tO4MamZhwQTxFWgwX41voXuG4Ufpn1zBHSx2pcttvuDYSvldVJlqIXoivhjbsYXGvB/";
     shell = pkgs.fish;
   };
 
