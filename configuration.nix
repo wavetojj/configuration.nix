@@ -21,7 +21,7 @@
   };
 
   networking = {
-    hostName = "x1";
+    hostName = "haedosaMachine";
     networkmanager = {
       enable   = true;
       packages = [ pkgs.networkmanager ];

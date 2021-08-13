@@ -1,0 +1,1 @@
+This is a minimal configuration.nix template as a starter. After installing this configuration, 'hsystem' can be installed using nix flake.
